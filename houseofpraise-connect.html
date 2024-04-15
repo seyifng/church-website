@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>House Of Praise Hampton</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="styles/header-nav.css">
+
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/body2.css">
+    <link rel="stylesheet" href="styles/body3.css">
+    <link rel="stylesheet" href="styles/footer.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="houseofpraise.html" class="logo"><img class="rccg-logo" src="logo/rccg.png"></a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="houseofpraise.html" style="--i:0;">Home</a>
+        <a href="houseofpraise-our-ourbelief.html" style="--i:1;">About Us</a>
+        <a href="houseofpraise-events.html" style="--i:2;">Events</a>
+        <a href="https://buy.stripe.com/8wM6qTb5AeYM1tS5kk" target=”_blank” style="--i:3;">Giving</a>
+        <a href="houseofpraise-connect.html" style="--i:4;" class="active">Connect</a>
+      </nav>
+      <script>
+        function toggleDropdown(wrapper){
+          wrapper.classList.toggle('clicked')
+        }
+      </script>
+    </div>
+
+    <div class="connect-part">
+      <div class="cu-info">
+        <p class="cu-t">Connect with Us</p>
+        <p class="cu-st">Reach Out To Us if You have Questions or Testimonies</p>
+        <div class="line-2"> 
+          <span class="line-e"> </span>
+        </div>
+        <p class="ci">Contacts Info</p>
+        <div class="ci-list">
+          <ul class="lc-ci">
+            <li>
+              <span><i class='bx bxs-phone' id="phone-1"></i></span>
+              <div class="ci-text">
+                <p class="ci-t">Call Us</p>
+                <p class="ci-st">(757) 927-7383</p>
+              </div>
+            </li>
+            <li>
+               <span><i class='bx bxs-envelope' id="evelope-1"></i></span>
+               <div class="ci-text">
+                <p class="ci-t">Mail Us</p>
+                <p class="ci-st">hophampton@gmail.com</p>
+               </div>
+            </li>
+            <li>
+              <span><i class='bx bxs-map' id="map-1"></i></span>
+              <div class="ci-text">
+                <p class="ci-t">Visit Us</p>
+                <p class="ci-st">1401 North King Street, Hampton VA 23669, USA</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cu-user">
+        <form action="https://formsubmit.co/hophampton@gmail.com" method="POST"> 
+          <label for="fullName"> 
+              <i class="fa fa-solid fa-user" 
+                 style="margin: 2px;"> 
+              </i> Name 
+          </label> 
+          <input type="text" 
+                 id="fullName" 
+                 name="fullName" required placeholder="Full Name"> 
+
+          <label for="email"> 
+              <i class="fa fa-solid fa-envelope" 
+                 style="margin: 2px;"> 
+              </i> 
+              Email 
+
+          </label> 
+          <input type="email"
+                 id="email" 
+                 name="email" required placeholder="Email Address"> 
+
+          <label for="mobile"> 
+              <i class=" fa fa-solid fa-phone" 
+                 style="margin: 2px;"> 
+              </i> 
+              Phone
+          </label> 
+          <input type="tel"
+                 id="mobile" 
+                 name="mobile" required placeholder="Phone Number"> 
+
+          <label for="msg"> 
+              <i class=" fa fa-solid fa-envelope" 
+                 style="margin: 2px;"> 
+              </i>Message</label> 
+          <textarea name="msg" required placeholder="Enter Message" rows="4"></textarea> 
+          <button class="submit-1" type="submit"> 
+              Submit 
+          </button> 
+      </form> 
+      </div>
+    </div>
+
+    <div class="map-div"> 
+      <iframe class="maps-nee" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588420.2587269542!2d-76.67926791529374!3d37.07957556043608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba848999abb067%3A0xbd09a43746786def!2s1401%20N%20King%20St%2C%20Hampton%2C%20VA%2023669!5e0!3m2!1sen!2sus!4v1709945240873!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <div class="end-section">
+      <div class="our-ministries">
+        <p class="min-header">MINISTRIES</p>
+        <ul class="lm">
+          <li>Men's Ministry</li>
+          <li>Women's Ministry</li>
+          <li>Youth's Ministry</li>
+          <li>Children's Ministry</li>
+          <li>Prayer Ministry</li>
+        </ul>
+        <div class="min-container">
+          <a rel="noopener" class="more-min-link" href="houseofpraise-our-ourbelief.html#timeline">
+            <span class="min-more-button">VIEW MINISTRIES</span>
+          </a>
+        </div>
+      </div>
+      <div class="our-departments">
+        <p class="dep-header">DEPARTMENTS</p>
+        <ul class="ld">
+          <li>Ministery Department</li>
+          <li>Ushering Department </li>
+          <li>Media Department</li>
+          <li>Technical Department</li>
+          <li>Choir Department</li>
+        </ul>
+        <div class="dep-container">
+          <a rel="noopener" class="more-dep-link" href="houseofpraise-our-ourbelief.html#timeline">
+            <span class="dep-more-button">VIEW DEPARTMENTS</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-info">
+        <p class="con-header">CONTACT INFO</p>
+        <p class="con-body">Drop us a line or give us a ring. 
+          We love to hear about your experiences with RCCG
+          House Of Praise Hampton and are happy to answer any question
+          you may have.</p>
+          <ul class="lc">
+            <li>
+              <span><i class='bx bxs-map' id="map"></i></span>
+              <span class="l-text">Address : 1401 North King Street, Hampton VA 23669, USA</span>
+            </li>
+            <li>
+              <span><i class='bx bxs-phone' id="phone"></i></span>
+              <span class="p-text">Phone : (757) 927-7383</span>
+            </li>
+            <li>
+               <span><i class='bx bxs-envelope' id="evelope"></i></span>
+               <span class="e-text">Email : hophampton@gmail.com</span>
+            </li>
+          </ul>
+          <ul class="socials">
+            <p class="follow-us">Follow Us</p>
+            <li><a href="#"><i class='bx bxl-youtube icon'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram icon'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook-square icon'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter icon'></i></a></li>
+          </ul>
+      </div>
+    </div>
+    
+    <div class="copy-right">
+      <span>rccghouseofpraisehampton.org  © 2024. All Rights Reserved
+      </span>
+    </div>
+  </body>
+</html>

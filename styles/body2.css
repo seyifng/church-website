@@ -1,0 +1,333 @@
+.pic-cont{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  min-height: 45vh;
+  margin-bottom: 30px;
+}
+.secpage-img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.c-title{
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "proxima-nova", sans-serif;
+  margin: 5px 0;
+  text-shadow: 1px 1px 10px grey;
+}
+.church-name{
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "proxima-nova", sans-serif;
+  line-height: 30px;
+  text-shadow: 0px 0px 10px grey;
+}
+.heading{
+  padding: 30px 80px;
+  margin-top: 80px;
+  font-size: 22px;
+  white-space: nowrap;
+}
+.first-part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.our-pastors,
+.our-church{
+  max-width: 50%;
+  padding: 10px 25px;
+}
+.op-title,
+.ou-title{
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.op-name,
+.ou-subtitle{
+  font-size: 32px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.op-description,
+.church-description{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.mf-title{
+  font-size: 18px;
+}
+.mf-descript{
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.second-part{
+  text-align: center;
+  padding: 80px 70px;
+}
+.wws-title{
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "proxima-nova", sans-serif;
+}
+.wws-subtitle{
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  font-family: "proxima-nova", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+.two-sides{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+}
+.our-belief,
+.our-vision{
+  max-width: 50%;
+  padding: 10px 20px;
+}
+.ob-title,
+.ov-title{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "proxima-nova", sans-serif;
+}
+.belief-description,
+.vision-description{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+.belief-description{
+  padding-top: 10px;
+}
+.vision-description{
+  background-color: rgba(0, 0, 0, 0.09);
+  padding: 20px 15px;
+  border-left: solid 4px rgba(0, 0, 0, 0.265);
+  border-right: solid 4px rgba(0, 0, 0, 0.265);
+  text-align: center;
+}
+.hwat-title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 25px 0;
+}
+.hwat-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 35px;
+}
+.hwat-titles{
+  font-weight: 700;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+.hwat-detail{
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
+.bby{
+  display: flex;
+  align-items: center;
+  padding: 20px 80px;
+}
+.wrapper{
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  height: 45px;
+  width: 45px;
+  background:rgb(255, 211, 145);
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 102%;
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.wrapper i:first-child{
+  left: 0px;
+}
+.wrapper i:last-child{
+  right: 0px;
+}
+.wrapper i:hover {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: black;
+  transition: all .2s ease-out;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 9px);
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel.dragging .card{
+  cursor: grab;
+  user-select: none;
+}
+.carousel.dragging{
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+.carousel .card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 15px;
+  list-style: none;
+  border-radius: 8px;
+  height: auto;
+  background: rgb(22,101,149);
+  background: radial-gradient(circle, rgba(22,101,149,1) 0%, rgba(34,34,34,1) 100%);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.card .img img{
+  width: 100%;
+  height: auto;
+}
+
+.mf-title{
+  font-size: 17px;
+  font-weight: 900;
+  color: white;
+  margin: 10px 0 5px 0;
+  font-family: "proxima-nova", sans-serif;
+}
+.mf-descript{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  margin: 0 0 5px 0;
+  font-family: "proxima-nova", sans-serif;
+}
+
+.fd-title{
+  font-weight: 800;
+  font-size: 24px;
+  white-space: nowrap;
+  z-index: +1;
+  padding-right: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1400px){
+  .wrapper .carousel{
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }  
+  .bby{
+    flex-direction: column;
+  }
+  .fd-title{
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 957px){
+  .wrapper .carousel{
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+  .heading,
+  .first-part,
+  .second-part{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 765px){
+  .pic-cont{
+    min-height: 40vh;
+    margin-top: -10px;
+  }
+
+  .heading,
+  .first-part,
+  .second-part{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .first-part,
+  .two-sides{
+    flex-direction: column;
+  }
+  .our-pastors,
+  .our-church,
+  .our-belief,
+  .our-vision{
+    max-width: 100%;
+    padding: 0 0 10px 0;
+  }
+  .c-title{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .church-name{
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+@media  screen and (max-width: 500px) {
+  .c-title{
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .church-name{
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+  .wrapper .carousel{
+    grid-auto-columns: 100%;
+  }  
+}

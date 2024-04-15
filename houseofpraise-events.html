@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>House Of Praise Hampton</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="styles/header-nav.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/body4.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="main.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="#" class="logo"><img class="rccg-logo" src="logo/rccg.png"></a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="houseofpraise.html" style="--i:0;">Home</a>
+        <a href="houseofpraise-our-ourbelief.html" style="--i:1;">About Us</a>
+        <a href="houseofpraise-events.html" style="--i:2;" class="active">Events</a>
+        <a href="https://buy.stripe.com/8wM6qTb5AeYM1tS5kk" target=”_blank” style="--i:3;">Giving</a>
+        <a href="houseofpraise-connect.html" style="--i:4;">Connect</a>
+      </nav>
+      <script>
+        function toggleDropdown(wrapper){
+          wrapper.classList.toggle('clicked')
+        }
+      </script>
+    </div>
+
+
+    <div class="church-calendar">
+      <div class="cc-title">
+        <p>OUR CALENDAR</p>
+      </div>
+      <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%234285F4&mode=MONTH&title=Church%20calendar&showCalendars=0&showPrint=0&showNav=0&showTitle=0&src=b2x1d2FzZXlpYWRlcG9qdTJAZ21haWwuY29t&color=%23F6BF26" 
+      style="border-width:0" width="100%" 
+      height="500px" frameborder="4" 
+      scrolling="no">
+    </iframe>
+    </div>
+    
+    <div class="end-section">
+      <div class="our-ministries">
+        <p class="min-header">MINISTRIES</p>
+        <ul class="lm">
+          <li>Men's Ministry</li>
+          <li>Women's Ministry</li>
+          <li>Youth's Ministry</li>
+          <li>Children's Ministry</li>
+          <li>Prayer Ministry</li>
+        </ul>
+        <div class="min-container">
+          <a rel="noopener" class="more-min-link" href="houseofpraise-our-ourbelief.html#timeline">
+            <span class="min-more-button">VIEW MINISTRIES</span>
+          </a>
+        </div>
+      </div>
+      <div class="our-departments">
+        <p class="dep-header">DEPARTMENTS</p>
+        <ul class="ld">
+          <li>Ministery Department</li>
+          <li>Ushering Department </li>
+          <li>Media Department</li>
+          <li>Technical Department</li>
+          <li>Choir Department</li>
+        </ul>
+        <div class="dep-container">
+          <a rel="noopener" class="more-dep-link" href="houseofpraise-our-ourbelief.html#timeline">
+            <span class="dep-more-button">VIEW DEPARTMENTS</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-info">
+        <p class="con-header">CONTACT INFO</p>
+        <p class="con-body">Drop us a line or give us a ring. 
+          We love to hear about your experiences with RCCG
+          House Of Praise Hampton and are happy to answer any question
+          you may have.</p>
+          <ul class="lc">
+            <li>
+              <span><i class='bx bxs-map' id="map"></i></span>
+              <span class="l-text">Address : 1401 North King Street, Hampton VA 23669, USA</span>
+            </li>
+            <li>
+              <span><i class='bx bxs-phone' id="phone"></i></span>
+              <span class="p-text">Phone : (757) 927-7383</span>
+            </li>
+            <li>
+               <span><i class='bx bxs-envelope' id="evelope"></i></span>
+               <span class="e-text">Email : hophampton@gmail.com</span>
+            </li>
+          </ul>
+          <ul class="socials">
+            <p class="follow-us">Follow Us</p>
+            <li><a href="#"><i class='bx bxl-youtube icon'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram icon'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook-square icon'></i></a></li>
+            <li><a href="#"><i class='bx bxl-twitter icon'></i></a></li>
+          </ul>
+      </div>
+    </div>
+    
+    <div class="copy-right">
+      <span>rccghouseofpraisehampton.org  © 2024. All Rights Reserved
+      </span>
+    </div>
+  </body>
+</html>

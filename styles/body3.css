@@ -1,0 +1,150 @@
+.connect-part{
+  display: flex; 
+  margin-top: 150px;
+  padding: 0 80px;
+}
+
+.cu-img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.cu-info{
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: 20px;
+}
+.cu-t{
+  font-size: 19px;
+  font-weight: 500;
+  color: goldenrod;
+  line-height: 30px;
+}
+.cu-st{
+  font-size: 33px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.ci{
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+ul.lc-ci li{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+.ci-text{
+  padding-left: 18px;
+}
+.ci-t{
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.ci-st{
+  color: rgba(0, 0, 0, 0.7);
+}
+#map-1,
+#phone-1,
+#evelope-1{
+  font-size: 34px;
+  background-color: rgb(39, 69, 170);
+  border-radius: 50%;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+}
+.cu-user {
+  flex: 1; 
+  padding: 20px; 
+  background-color: #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+} 
+
+.line-2{
+  padding: 0 0 15px 0;
+}
+
+.cu-user label { 
+  display: block; 
+  margin-bottom: 8px;
+  font-size: 16px; 
+  font-weight: 400;
+} 
+  
+.cu-user input, 
+.cu-user textarea { 
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 16px; 
+  box-sizing: border-box; 
+  border-radius: 6px; 
+  background-color: rgba(0, 0, 0, 0.05); 
+  border: solid rgba(0, 0, 0, 0.045); 
+  font-size: 15px;
+} 
+  
+.cu-user textarea { 
+  resize: vertical; 
+} 
+.cu-user { 
+  margin-bottom: 16px; 
+} 
+.cu-user label { 
+  margin-right: 16px; 
+} 
+.submit-1{
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: goldenrod;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.map-div{
+  padding: 30px 80px;
+  border: none;
+}
+
+@media only screen and (max-width: 957px){
+  .connect-part
+  .map-div{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 765px){
+  .connect-part,
+  .map-div{
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+  .cu-info{
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .cu-st{
+    font-size: 30px;
+  }
+}
