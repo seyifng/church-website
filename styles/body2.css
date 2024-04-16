@@ -6,12 +6,15 @@
   position: relative;
   overflow: hidden;
   min-height: 45vh;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .secpage-img{
   position: absolute;
-  width: 100%;
-  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
   z-index: -1;
 }
 .c-title{
@@ -19,7 +22,7 @@
   font-weight: 600;
   color: #fff;
   font-family: "proxima-nova", sans-serif;
-  margin: 5px 0;
+  margin: 8px 0;
   text-shadow: 1px 1px 10px grey;
 }
 .church-name{
@@ -281,17 +284,18 @@
   }
 }
 
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 700px){
   .pic-cont{
     min-height: 40vh;
-    margin-top: -10px;
   }
 
-  .heading,
+  .heading{
+    padding: 0 20px;
+  }
   .first-part,
   .second-part{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .first-part,
   .two-sides{
@@ -305,25 +309,26 @@
     padding: 0 0 10px 0;
   }
   .c-title{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
   }
   .church-name{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 
-@media  screen and (max-width: 500px) {
+@media only screen and (max-width: 530px) {
   .c-title{
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 14px;
+    margin: 5px 0;
   }
   .church-name{
-    font-weight: 700;
-    font-size: 15px;
+    font-size: 19px;
   }
-  
+  .heading{
+    padding: 0 20px;
+  }
 }
 
 @media only screen and (max-width: 600px){
