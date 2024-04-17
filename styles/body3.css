@@ -36,10 +36,15 @@
   padding-bottom: 15px;
   color: rgba(0, 0, 0, 0.7);
 }
-ul.lc-ci li{
+.lc-ci{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.ci-option{
   display: flex;
   flex-direction: row;
-  padding-bottom: 30px;
+  padding: 1px 0 30px 0;
 }
 .ci-text{
   padding-left: 18px;
