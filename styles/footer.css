@@ -107,7 +107,10 @@
   font-weight: 300;
   text-align: left;
 }
-
+.num{
+  text-decoration: none;
+  color: rgb(196, 196, 196);
+}
 #map,
 #phone,
 #evelope{
