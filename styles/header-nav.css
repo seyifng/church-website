@@ -257,7 +257,7 @@ body{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 765px) {
   .auto-typing-text{
     padding-left: 20px;
   }
