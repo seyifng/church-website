@@ -7,32 +7,34 @@
   list-style: none;
 }
 
-body{
+body {
   min-height: 100vh;
 }
 
-.rccg-logo{
+.rccg-logo {
   max-width: 100px;
   width: 100%;
   padding: -30px;
 }
-.rccg-pic{
+
+.rccg-pic {
   max-width: 100%;
   height: auto;
 }
 
-.header{
+.header {
   position: fixed;
   width: 100%;
   top: 0;
   right: 0;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 1.3rem 7%;
   z-index: 1000;
   animation: dropdowns 500ms ease-in;
 }
+
 .header::before {
   content: '';
   position: absolute;
@@ -45,7 +47,7 @@ body{
   z-index: -1;
 }
 
-.navbar a{
+.navbar a {
   color: rgb(255, 255, 255);
   font-size: .95rem;
   font-weight: 500;
@@ -55,22 +57,25 @@ body{
   text-shadow: -1px 3px 10px rgb(10, 10, 10);
   transition: 0.6s
 }
-.navbar a:hover{
+
+.navbar a:hover {
   color: rgb(255, 217, 0);
   border-radius: 6px;
 }
-.navbar a.active{
+
+.navbar a.active {
   color: gold;
   transition: all .2s ease-out;
-  text-shadow: 0px 3px 10px ;
+  text-shadow: 0px 3px 10px;
   border-radius: 3px;
   box-shadow: rgba(18, 148, 234, 0.456) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-#check{
+#check {
   display: none;
 }
-.icons{
+
+.icons {
   font-size: 2.1rem;
   color: rgba(255, 255, 255, 0.835);
   cursor: pointer;
@@ -78,7 +83,7 @@ body{
   box-shadow: rgba(0, 110, 255, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.video-name{
+.video-name {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -92,7 +97,7 @@ body{
 
 }
 
-.video-bg{
+.video-bg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,10 +106,12 @@ body{
   min-height: 100%;
   z-index: -1;
 }
-.cover-img-sub{
+
+.cover-img-sub {
   display: none;
 }
-.auto-typing-text{
+
+.auto-typing-text {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -112,28 +119,30 @@ body{
   padding-top: 100px;
   text-align: left;
   white-space: nowrap;
-  color:rgba(255, 255, 255, 0.932);
+  color: rgba(255, 255, 255, 0.932);
 }
 
-.ww{
+.ww {
   font-weight: 400;
   font-size: 30px;
   text-shadow: 1px 2px 10px black;
 }
-.ww2{
+
+.ww2 {
   font-weight: 700;
   font-size: 60px;
   text-shadow: 2px 2px 10px black;
 
 }
 
-.h-buttons{
+.h-buttons {
   margin-top: 15px;
-  display:flex;
+  display: flex;
   align-items: center;
 }
+
 .watchlive,
-.donate-button{
+.donate-button {
   padding: 10px 18px 10px 18px;
   margin-right: 13px;
   background-color: white;
@@ -150,29 +159,34 @@ body{
   border: 1px solid rgba(0, 0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.donate-button{
+
+.donate-button {
   margin-right: 0;
 }
-#video{
+
+#video {
   font-size: 20px;
   padding-right: 6px;
   vertical-align: middle;
 }
-#video:hover{
+
+#video:hover {
   color: white;
 }
 
-.watchlive:hover{
+.watchlive:hover {
   background-color: crimson;
   color: white;
   transition: all .2s ease-in;
 }
-.donate-button:hover{
+
+.donate-button:hover {
   background-color: rgb(20, 20, 20);
   color: white;
   transition: all .3s ease-in;
 }
-#arroww{
+
+#arroww {
   font-size: 18px;
   font-weight: 400;
   padding-left: 1px;
@@ -180,24 +194,24 @@ body{
 }
 
 
-@media only screen and (max-width: 957px){
-  .icons{
+@media only screen and (max-width: 957px) {
+  .icons {
     display: inline-flex;
   }
-  
-  #check:checked~.icons #menu-icon{
+
+  #check:checked~.icons #menu-icon {
     display: none;
   }
 
-  .icons #close-icon{
+  .icons #close-icon {
     display: none;
   }
 
-  #check:checked~.icons #close-icon{
+  #check:checked~.icons #close-icon {
     display: block;
   }
 
-  .navbar{
+  .navbar {
     position: absolute;
     top: 100%;
     left: 0;
@@ -211,7 +225,7 @@ body{
     transition: .3s ease;
   }
 
-  #check:checked~.navbar{
+  #check:checked~.navbar {
     height: 19.4rem;
   }
 
@@ -224,54 +238,62 @@ body{
     opacity: 0;
     transition: .3s ease;
   }
-  #check:checked~.navbar a{
-   transform: translateY(0);
-   transition-delay: calc(.15s * var(--i));
-   opacity: 1;
+
+  #check:checked~.navbar a {
+    transform: translateY(0);
+    transition-delay: calc(.15s * var(--i));
+    opacity: 1;
   }
 
-  .video-name{
+  .video-name {
     min-height: 90vh;
   }
 
-  .auto-typing-text{
+  .auto-typing-text {
     padding-left: 50px;
     padding-top: 170px;
     width: 50%;
   }
-  .ww2{
+
+  .ww2 {
     font-size: 50px;
   }
-  .ww{
+
+  .ww {
     font-size: 30px;
   }
 
-  .navbar a.active{
+  .navbar a.active {
     border: none;
     transition: all .2s ease-out;
     text-shadow: 0 0 10px blue;
     box-shadow: none;
   }
-  .navbar a:hover{
+
+  .navbar a:hover {
     border: none;
   }
 }
 
 @media screen and (max-width: 765px) {
-  .auto-typing-text{
+  .auto-typing-text {
     padding-left: 20px;
   }
-  .ww2{
+
+  .ww2 {
     font-size: 40px;
   }
-  .ww{
+
+  .ww {
     font-size: 21px;
   }
-  .video-bg{
+
+  .video-bg {
     display: none;
     transition: all 0.3s ease;
   }
-  .cover-img-sub{
+
+  .cover-img-sub {
     display: flex;
     position: absolute;
     top: 50%;
