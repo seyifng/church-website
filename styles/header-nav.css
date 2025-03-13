@@ -42,13 +42,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px);
   z-index: -1;
+  transition: background-color 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
 }
 
-.header.scrolled::before {
-  backdrop-filter: blur(20px);
-  background-color: rgba(0, 0, 0, 0.05); /* Adjust transparency when scrolled */
+body.index .header::before {
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+  backdrop-filter: blur(0px); /* No blur initially */
+}
+body.index .header.scrolled::before {
+  background-color: rgba(0, 0, 0, 0.05); /* Darker */
+  backdrop-filter: blur(20px); /* Apply blur */
 }
 
 .navbar a {

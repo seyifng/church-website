@@ -113,8 +113,7 @@
             <p class="mf-title">MEN'S FELLOWSHIP</p>
             <p class="mf-descript">Gathered under the sheltering branches of brotherhood,
               men of faith come together to share their burdens, joys, and to uplift one
-              another. They forge bonds strengthened by the wisdom of scriptures,
-              standing as pillars of strength in their families and communities. <br>
+              another. <br>
               "Iron sharpens iron, and one man sharpens another." - Proverbs 27:17
             </p>
           </div>
@@ -124,9 +123,7 @@
           <div class="wwwww">
             <p class="mf-title">WOMEN'S FELLOWSHIP</p>
             <p class="mf-descript">In the sacred circle of sisterhood, women unite in love and
-              support, nurturing one another's spirits and fostering growth in faith. They
-              find solace in shared experiences, weaving threads of compassion and
-              understanding through the fabric of their lives. <br>
+              support, nurturing one another's spirits and fostering growth in faith. <br>
               "She is clothed with strength and dignity, and she laughs without fear of the future."
               - Proverbs 31:25
             </p>
@@ -150,8 +147,7 @@
             <p class="mf-title">CHILDREN'S DEPARTMENT</p>
             <p class="mf-descript">In the innocence of childhood, young hearts are nurtured
               and guided along the path of faith, discovering the wonders of God's love
-              through stories, play, and joyful exploration. In this sacred space, seeds
-              of faith are planted, blossoming into a lifelong journey of spiritual
+              through stories, play, and joyful exploration.
               growth.<br>
               "Train up a child in the way he should go; even when he is old he will not
               depart from it." - Proverbs 22:6
@@ -198,8 +194,20 @@
       </ul>
       <i id="right" class='bx bx-chevron-right'></i>
     </div>
-    <script></script>
   </div>
+  <script>
+    const carousel = document.querySelector(".carousel");
+    const leftArrow = document.getElementById("left");
+    const rightArrow = document.getElementById("right");
+
+    leftArrow.addEventListener("click", () => {
+        carousel.scrollBy({ left: -300, behavior: "smooth" });
+    });
+
+    rightArrow.addEventListener("click", () => {
+        carousel.scrollBy({ left: 300, behavior: "smooth" });
+    });
+  </script>
 
   <div class="second-part">
     <div class="what-we-stand">

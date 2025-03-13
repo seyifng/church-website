@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="styles/footer.css">
 </head>
 
-<body>
+<body class="index">
   <div class="header">
     <a href="./" class="logo"><img class="rccg-logo" src="logo/rccg.png"></a>
 
@@ -57,16 +57,21 @@
   </div>
 
   <script>
-    window.addEventListener("scroll", function () {
-        let header = document.querySelector(".header");
-        let scrollPosition = window.scrollY;
+    document.addEventListener("DOMContentLoaded", function () {
+    // Check if the current page is index.html (or the homepage)
+    if (window.location.pathname === "/" || window.location.pathname.includes("index.html")) {
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector(".header");
+            let scrollPosition = window.scrollY;
 
-        if (scrollPosition > window.innerHeight) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
+            if (scrollPosition > window.innerHeight) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    }
+});
   </script>
 
   <div class="video-name">
