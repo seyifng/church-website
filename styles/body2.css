@@ -1,8 +1,3 @@
-a[href^="tel:"] {
-    color: #007bff;
-    text-decoration: none;
-}
-
 .pic-cont{
   display: flex;
   justify-content: left;
