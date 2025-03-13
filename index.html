@@ -10,7 +10,7 @@
       "@context" : "https://schema.org",
       "@type": "PlaceOfWorship",
       "name": "RCCG House of Praise Hampton",
-      "alternateName" : "HOPH",
+      "alternateName" : "RCCGHOPH, House of Praise Hampton",
       "url" : "https://rccghoph.org/"
     }
     </script>
@@ -55,6 +55,19 @@
       }
     </script>
   </div>
+
+  <script>
+    window.addEventListener("scroll", function () {
+        let header = document.querySelector(".header");
+        let scrollPosition = window.scrollY;
+
+        if (scrollPosition > window.innerHeight) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+  </script>
 
   <div class="video-name">
     <video class="video-bg" autoplay loop muted>
@@ -372,7 +385,7 @@
   </div>
 
   <div class="copy-right">
-    <span>rccghoph.org © 2024. All Rights Reserved
+    <span>rccghoph.org © 2025. All Rights Reserved
     </span>
   </div>
 </body>
